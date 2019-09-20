@@ -1,0 +1,35 @@
+﻿<StencilDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Clickatell">
+  <DocumentProperties>
+    <Title>Clickatell</Title>
+    <ComponentType>AgilePart</ComponentType>
+    <Creator>User Name</Creator>
+    <ColorCode>#30A7DF</ColorCode>
+    <Description>My custom activity</Description>
+    <GroupImagePath>Resources/Images/StencilGroupIcons_16x16/AgilePartGroupIcons.png</GroupImagePath>
+    <ContextMenuImagePath>Resources/Images/TreeViewIcons_16x16/AgilePartTreeViewIcons.png</ContextMenuImagePath>
+    <Vendor>My Organization</Vendor>
+    <BuildNumberCreated>939530202</BuildNumberCreated>
+    <BuildNumberEdited>939530202</BuildNumberEdited>
+    <CreatedDate>2019-04-08T14:07:12</CreatedDate>
+    <Edited>True</Edited>
+    <LCID>1033</LCID>
+    <Version>1.0</Version>
+  </DocumentProperties>
+  <Stencil>
+    <Shape ID="1" Name="SendMessageClickatell" Status="RELEASED" ComponentID="{00000000-0000-0000-0000-000000000000}" ShapeID="B3BB802BF9C21AD0119959F6D71BEC3D" IsSelected="true">
+      <ShapeMetadata>
+        <Vendor>My Organization</Vendor>
+        <Title>SendMessageClickatell</Title>
+        <Enablement>Web Only</Enablement>
+        <icon>Resources/Images/StencilIcons_50x50/CustomAgilePart.png</icon>
+        <TreeViewIcon>Resources/Images/TreeViewIcons_16x16/AgilePartTreeViewIcons.png</TreeViewIcon>
+        <Description>Custom activity</Description>
+        <Version>1.0.0.0</Version>
+        <ExecutableEnvironment>CLR</ExecutableEnvironment>
+        <CreatedDate>2019-04-08T14:12:51</CreatedDate>
+        <ExecutableKey>#AgilePart:SendMessageClickatell, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d9ba5adf10cbd939:SendMessageClickatell.MyAgilePart:SendMessageClickatell</ExecutableKey>
+        <ExecutableType>AgilePart</ExecutableType>
+      </ShapeMetadata>
+    </Shape>
+  </Stencil>
+</StencilDocument>

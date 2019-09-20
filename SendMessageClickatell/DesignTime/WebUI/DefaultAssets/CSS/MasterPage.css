@@ -1,0 +1,262 @@
+﻿body {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: Arial,Tahoma,Sans-serif;
+}
+#MainDiv{
+     width: 100%;
+    height: 100%;
+}
+.k-in {
+    font-family: Arial;
+    font-size: 11px !important;
+    border: none !important;
+}
+
+    .k-in.k-state-hover {
+        font-family: Arial;
+        font-size: 11px !important;
+        color: #4795D0;
+        background-color: white !important;
+        border: none !important;
+    }
+
+#MainControlDiv:after {
+    opacity: .6;
+    background-color: black;
+}
+
+.MasterControlDiv {
+    position: absolute;
+     z-index: 9013;
+     visibility: visible;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    width: 800px;
+    height: 600px;
+    opacity: 1;
+    /*-webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
+    border: 1px solid #C5C5C5;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.MaintitleBar {
+    width: 100%;
+    height: 30px;
+    background-color: #57B1C9 !important;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+#htmlDiv, #ControlDiv {
+    height: 450px;
+}
+
+.windowButton {
+    background-image: none;
+    box-shadow: none;
+    border: 0px;
+    padding: 1px 3px;
+    background-color: #8E9918;
+    color: white;
+    border-radius: 2px;
+    min-width: 75px;
+    width: auto;
+    height: 25px;
+    text-align: center;
+    margin-right: 15px;
+    cursor:pointer;
+}
+
+.buttonContainer {
+    padding-bottom: 6px;
+    height: 35px;
+    float: right;
+}
+
+.PaginationContainer {
+    text-align: center;
+    height: 55px;
+}
+
+.Pagination {
+    height: 30px;
+    background-color: #9AD0DE !important;
+    text-align: center;
+}
+
+.MaintitleBarLable {
+    padding: 0px 10px;
+    line-height: 30px;
+    color: white;
+    font-size: 14px;
+}
+
+.DataPanelHeader, .DataPanelMainHeader {
+    border-bottom: 1px solid #99bbe8;
+    border-top: 0 none;
+    border-color: #ECECEC !important;
+    background-color: #49C3D7;
+    color: #FFFFFF !important;
+    font-weight: bold;
+    border-left: none;
+    border-right: none;
+    padding: 2px 3px 2px 5px;
+    height: 25px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+    .DataPanelHeader:focus, .DataPanelMainHeader:focus {
+        outline: none;
+    }
+
+.DataPanelMainHeader {
+    background-color: #57B1C9;
+}
+
+
+.k-collapsed {
+    height: 150px !important;
+    width: 30px !important;
+    top: 22px !important;
+    background-color: #57B1C9 !important;
+    border: 0 !important;
+}
+
+    .k-collapsed .k-expand-next {
+        background: none !important;
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        top: 0 !important;
+    }
+
+    .k-collapsed .k-collapsed-text {
+        font-size: 13px;
+        font-family: Arial,Helvetica,Sans-Serif;
+        font-weight:bold;
+        display: inline-block;
+        width: 125px;
+        max-width: 140px;
+        height: 15px;
+        transform: rotate(270deg);
+        top: 50px;
+        position: relative;
+        left: -48px;
+        color: white;
+        line-height: 15px;
+        text-align: center;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+
+
+.treeviewContainer {
+    height: 385px !important;
+}
+
+#right-pane{
+     top:22px !important;
+     overflow:hidden !important;
+}
+
+#right-pane .pane-content {
+    width: 100%;
+    height: 100%;   
+}
+.DataPanelTree{
+    overflow:hidden !important;
+}
+
+.process-data-container {
+    vertical-align: middle;
+}
+
+.right-header {
+    color: white;
+    line-height: 26px;
+    padding: 5px 3px 4px 5px;
+    height: 26px;
+    background-color: #57B1C9;
+    font-size: 14px;
+}
+
+.right-body {
+    height: 385px;
+    border: 1px solid #D7D7D7;
+    border-right:0px;
+}
+
+#horizontal {
+    height: 78%;
+    width: 800px;
+    border: 0px;
+}
+
+    #horizontal .k-splitbar {
+        border: 0;
+        width: 0;
+    }
+
+    #horizontal .k-collapse-next {
+        background: none;
+    }
+
+
+.right-header-text {
+    display: inline-block;
+    max-width: 80%;
+    width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    float: left;
+}
+
+.right-header-icon {
+    display: inline-block;
+    width: 20%;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: 20px 8px;
+    cursor: pointer;
+    background-image: url('../Images/others/leftarrow.png');
+    float: left;
+}
+
+.k-collapsed-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    cursor: pointer;
+    background:url("../Images/Others/rightarrow.png") no-repeat scroll left center rgba(0, 0, 0, 0) !important;
+    /*background-image: url('../Images/others/rightarrow.png');*/
+    float: right;
+    margin-right: 3px;
+    margin-bottom: 2px !important;
+    margin-top: 10px;
+}
+
+.k-drag-clue {
+    font-size: 11px;
+}
+
+.Pagination a.tooltip {
+    display: inline-block;
+    padding-top: 4px;
+    position: relative;
+    width: 30px !important;
+}
+
+    .Pagination a.tooltip.selected {
+        background-color: #ffffff !important;
+    }

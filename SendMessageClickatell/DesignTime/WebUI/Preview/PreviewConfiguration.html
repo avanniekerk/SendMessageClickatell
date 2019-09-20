@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Config Preview Page</title>
+    <link href="../DefaultAssets/CSS/kendo.common.min.css" rel="stylesheet" />
+    <link href="../DefaultAssets/CSS/kendo.default.min.css" rel="stylesheet" />
+    <link href="../DefaultAssets/CSS/Default.css" rel="stylesheet" />
+    <link href="../DefaultAssets/CSS/MasterPage.css" rel="stylesheet" />
+
+    <script src="../DefaultAssets/Scripts/jquery-1.8.3.js"></script>
+    <script src="../DefaultAssets/Scripts/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../DefaultAssets/Scripts/kendo.all.min.js"></script>
+    <script src="../DefaultAssets/Scripts/jquery_nicescroll_min.js"></script>
+    <script src="../Config.js"></script>
+    <script src="../DefaultAssets/Scripts/Helper.js"></script>
+    <script src="../DefaultAssets/Scripts/APIHandler.js"></script>
+    <script src="../DefaultAssets/Scripts/encode.js"></script>
+    <script src="../DefaultAssets/Scripts/Validate.js"></script>
+    <script src="../DefaultAssets/Scripts/Utility.js"></script>  
+    <script src="../DefaultAssets/Scripts/i18next-1.7.0.js"></script>
+    <meta charset="utf-8" />
+</head>
+<body class="Langi8n">
+    <div id="MainDiv" class="hiddenPageload">
+        <!--Page to Preview the Config Dialogues-->
+        <!--Main Page Details-->
+        <div id="MainControlDiv" class="MasterControlDiv">
+            <div class="MaintitleBar">
+                <label class="lblPadding MaintitleBarLable" data-i18n="[title]PreviewDetails;PreviewDetails"></label>
+            </div>
+            <div id="ControlDiv" style="z-index: 0;">
+                <div class="headerPanel">
+                    <div style="padding-top:15px;">
+                        <label class="title paddingTitle" data-i18n="[title]PreviewDetails;PreviewDetails"></label>
+                    </div>
+                </div>
+                <div class="marginLeft15px oneColSpan nospace">
+                    <div class="detailsFieldWrapper oneColSpan" style="padding-top:10px;">
+                        <label class="lblPadding" data-i18n="[title]HTMLPath;HTMLPath"></label>
+                        <span class="star">&nbsp;*</span>
+                        <label class="labelBold">:</label><br />
+                        <input name="txtHTMLPath" id="txtHTMLPath" data-i18n="[placeholder]HTMLPathPlaceHolder" type="text" style="width: 76.5%;" />
+                        <input type="button" id="getpath" class="windowButton" data-i18n="[title]FilePath;[value]FilePath" style="margin-left:10px;" />
+                         <span class="k-widget k-tooltip k-tooltip-validation k-invalid-msg" id="errorHTMLPath" role="alert" style="display: none; width: auto !important"></span>
+                        <!--<input type="file" name="Att_AttributeID" class="inputField" id="uploadfile" />-->
+                     </div>
+                    <input type="file" id="fileupload" name="Att_AttributeID" class="inputField windowButton" style="display:none;" />
+                    <div class="detailsFieldWrapper twoColSpan" style="padding-top:10px;">
+                        <label class="lblPadding" data-i18n="[title]Locale;Locale"></label>
+                        <span class="star">&nbsp;*</span>
+                        <label class="labelBold">:</label><br />
+                        <select id="ddLanguage" style="width: 95.5% !important;"></select>
+                    </div>
+                    <div class="detailsFieldWrapper oneColSpan" style="padding-top:20px;">
+                        <label class="labelBold" data-i18n="[title]AuthHeader;AuthHeader"></label>
+                    </div>
+                    <div id="AuthDetailsDiv" class="detailsFieldWrapper oneColSpan">
+                        <div class="detailsFieldWrapper oneColSpan" style="padding-top:5px;">
+                            <label class="lblPadding" data-i18n="[title]APServerURL;APServerURL"></label>
+                            <label class="labelBold">:</label><br />
+                            <input name="txtAPServerURL" class="AuthDetailsControls" data-i18n="[placeholder]APServerURLPlaceHolder" id="txtAPServerURL" type="text" style="width: 87.5%;" />
+                        </div>
+                        <div class="detailsFieldWrapper oneColSpan" style="padding-top:5px;">
+                            <label class="lblPadding" data-i18n="[title]DomainName;DomainName"></label>
+                            <label class="labelBold">:</label><br />
+                            <input name="txtDomainName" class="AuthDetailsControls" id="txtDomainName" type="text" style="width: 87.5%;" />
+                        </div>
+                        <div class="detailsFieldWrapper twoColSpan" style="padding-top:5px;">
+                            <label class="lblPadding" data-i18n="[title]UserName;UserName"></label>
+                            <label class="labelBold">:</label><br />
+                            <input name="txtUserName" class="AuthDetailsControls" id="txtUserName" type="text" style="width: 95%;" />
+                        </div>
+                        <div class="detailsFieldWrapper twoColSpan" style="padding-top:5px;">
+                            <label class="lblPadding" data-i18n="[title]Passowrd;Passowrd"></label>
+                            <label class="labelBold">:</label><br />
+                            <input name="txtPassword" class="AuthDetailsControls" id="txtPassword" type="password" style="width: 95%;" />
+                        </div>
+                        <div class="detailsFieldWrapper oneColSpan" style="padding-top:5px; display:none;" >
+                            <label class="lblPadding" data-i18n="[title]Authorization;Authorization"></label>
+                            <label class="labelBold">:</label><br />
+                            <input name="txtAuthorization" class="marginRight15px" disabled="disabled" id="txtAuthorization" type="text" style="width: 64.4%;" />
+                            <!--<input type="button" class="windowButton" id="windowBtnTest" data-i18n="[title]Generate;[value]Generate"/>
+                            <input type="button" class="windowButton" id="windowBtnReset" data-i18n="[title]Reset;[value]Reset"/>-->
+                        </div>
+                        <div class="detailsFieldWrapper oneColSpan" style="padding-top:5px;">
+                            <input type="button" class="windowButton" id="windowBtnTest" data-i18n="[title]Generate;[value]Generate" />
+                            <input type="button" class="windowButton" id="windowBtnReset" data-i18n="[title]Reset;[value]Reset" />
+
+                        </div>
+                        <div class="detailsFieldWrapper oneColSpan" style="padding-top:5px;">
+                            <span class="k-widget k-tooltip k-tooltip-validation k-success-msg" id="Span1" data-i18n="[title]AuthNote;AuthNote" role="alert" style="width: auto !important"></span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="PaginationContainer">
+            </div>
+            <div class="buttonContainer" style="padding-right:70px;">
+                <input type="button" class="windowButton" id="windowBtnPreview" data-i18n="[title]Preview;[value]Preview" />
+            </div>
+        </div>
+
+        <!--Preview Page Details-->
+        <div id="ConfigurationDiv" class="MasterControlDiv">
+            <div class="MaintitleBar">
+                <label class="lblPadding MaintitleBarLable" data-i18n="[title]Preview;Preview"></label>
+            </div>
+
+            <div id="horizontal">
+                <div id="center-pane">
+                    <div class="pane-content">
+                        <div id="htmlDiv" style="z-index: 0;">
+                        </div>
+                    </div>
+                </div>
+                <div id="right-pane">
+                    <div class="pane-content">
+                        <div class="process-data-container">
+                            <div class="right-header">
+                                <span class="right-header-text" data-i18n="[title]ProcessData;ProcessData"></span>
+                                <span class="right-header-icon"></span>
+                            </div>
+                            <div class="right-body">
+                                <div class="treeviewContainer">
+                                    <div id='applicationTree'>
+                                        <Div class="DataPanelHeader" data-i18n="[title]FormData;FormData"></Div>
+                                        <div id='createTreeView' class="DataPanelTree">
+                                        </div>
+                                        <Div class="DataPanelHeader" data-i18n="[title]ModelData;ModelData"></Div>
+                                        <div id='processVariablesTree' class="DataPanelTree">
+                                        </div>
+                                        <Div class="DataPanelHeader" data-i18n="[title]DataSource;DataSource"></Div>
+                                        <div id='dataSourceTreeView' class="DataPanelTree">
+                                        </div>
+                                        <Div class="DataPanelHeader" data-i18n="[title]SystemData;SystemData"></Div>
+                                        <div id='variablesTree' class="DataPanelTree">
+                                        </div>
+                                        <Div class="DataPanelHeader" data-i18n="[title]GlobalData;GlobalData"></Div>
+                                        <div id='globalVariablesTree' class="DataPanelTree">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="PaginationContainer">
+                <div class="Pagination">
+                    <a class="buttons tooltip selected">
+                        <img src="../DefaultAssets/Images/WizardPagination/Common/BasicConfigurationH.png">
+                    </a>
+                </div>
+            </div>
+            <div class="buttonContainer">
+                <input type="button" class="windowButton" id="windowBtnOK" data-i18n="[title]OK;[value]OK"/>
+                <input type="button" class="windowButton" id="windowBtnCANCEL" data-i18n="[title]Cancel;[value]Cancel"/>
+            </div>
+        </div>
+    </div>
+
+    <script src="PreviewConfiguration.js"></script>
+    <!--<script src="MasterPage.js"></script>-->
+
+    <!--<img src="" />-->
+    <script src="../DefaultAssets/Scripts/PreviewHandler.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6EA3E940-3D2D-463D-86F8-8B67F0F1A836}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SendMessageClickatell</RootNamespace>
+    <AssemblyName>SendMessageClickatell</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ascentn.Workflow.Share, Version=2.0.0.2, Culture=neutral, PublicKeyToken=6438ef87a2e74007, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>c:\Program Files (x86)\AgilePoint\AgilePoint Developer\Assembly\Ascentn.Workflow.Share.dll</HintPath>
+    </Reference>
+    <Reference Include="Ascentn.Workflow.WFBase, Version=2.0.2.2, Culture=neutral, PublicKeyToken=021ca826ae8118aa, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>c:\Program Files (x86)\AgilePoint\AgilePoint Developer\Assembly\Ascentn.Workflow.WFBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DesignTime\ActivityGroup\Activity.en-US.group" />
+    <Content Include="DesignTime\WebUI\Assets\SchemaJSON.json" />
+    <Content Include="DesignTime\WebUI\Locale\de-DE\AdvanceSample.de-DE.json" />
+    <Content Include="DesignTime\WebUI\Locale\de-DE\BasicSample.de-DE.json" />
+    <Content Include="DesignTime\WebUI\Locale\en-US\BasicSample.en-US.json" />
+    <Content Include="DesignTime\WebUI\Locale\es\AdvanceSample.es.json" />
+    <Content Include="DesignTime\WebUI\Locale\es\BasicSample.es.json" />
+    <Content Include="DesignTime\WebUI\Locale\fr\AdvanceSample.fr.json" />
+    <Content Include="DesignTime\WebUI\Locale\fr\BasicSample.fr.json" />
+    <Content Include="DesignTime\WebUI\Locale\ja-JP\AdvanceSample.ja-JP.json" />
+    <Content Include="DesignTime\WebUI\Locale\ja-JP\BasicSample.ja-JP.json" />
+    <Content Include="DesignTime\WebUI\Locale\zh-CN\AdvanceSample.zh-CN.json" />
+    <Content Include="DesignTime\WebUI\Locale\zh-CN\BasicSample.zh-CN.json" />
+    <Content Include="DesignTime\WebUI\Locale\zh-TW\AdvanceSample.zh-TW.json" />
+    <Content Include="DesignTime\WebUI\Locale\zh-TW\BasicSample.zh-TW.json" />
+    <Content Include="DesignTime\WebUI\Locale\ja\AdvanceSample.ja.json" />
+    <Content Include="DesignTime\WebUI\Locale\ja\BasicSample.ja.json" />
+    <Content Include="DesignTime\WebUI\Locale\be\AdvanceSample.be.json" />
+    <Content Include="DesignTime\WebUI\Locale\be\BasicSample.be.json" />
+    <Content Include="DesignTime\WebUI\Locale\ar\AdvanceSample.ar.json" />
+    <Content Include="DesignTime\WebUI\Locale\ar\BasicSample.ar.json" />
+    <Content Include="DesignTime\WebUI\Locale\ca\AdvanceSample.ca.json" />
+    <Content Include="DesignTime\WebUI\Locale\ca\BasicSample.ca.json" />
+    <Content Include="DesignTime\WebUI\Locale\el\AdvanceSample.el.json" />
+    <Content Include="DesignTime\WebUI\Locale\el\BasicSample.el.json" />
+    <Content Include="DesignTime\WebUI\Locale\es-ES\AdvanceSample.es-ES.json" />
+    <Content Include="DesignTime\WebUI\Locale\es-ES\BasicSample.es-ES.json" />
+    <Content Include="DesignTime\WebUI\Locale\he\AdvanceSample.he.json" />
+    <Content Include="DesignTime\WebUI\Locale\he\BasicSample.he.json" />
+    <Content Include="DesignTime\WebUI\Locale\ko\AdvanceSample.ko.json" />
+    <Content Include="DesignTime\WebUI\Locale\ko\BasicSample.ko.json" />
+    <Content Include="DesignTime\WebUI\Locale\nl\AdvanceSample.nl.json" />
+    <Content Include="DesignTime\WebUI\Locale\nl\BasicSample.nl.json" />
+    <Content Include="DesignTime\WebUI\Locale\ru-RU\AdvanceSample.ru-RU.json" />
+    <Content Include="DesignTime\WebUI\Locale\ru-RU\BasicSample.ru-RU.json" />
+    <Content Include="DesignTime\WebUI\Locale\da\AdvanceSample.da.json" />
+    <Content Include="DesignTime\WebUI\Locale\da\BasicSample.da.json" />
+    <Content Include="DesignTime\WebUI\Preview\PreviewConfiguration.json" />
+    <Content Include="Activity.manifest" />
+    <Content Include="AgilePart.snk" />
+    <Content Include="AgilePoint.License" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DesignTime\WebUI\Config.js" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\CSS\Default.css" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\CSS\kendo.common.min.css" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\CSS\kendo.default.min.css" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\CSS\MasterPage.css" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Images\APLoading.gif" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Images\ErrorIcon.jpg" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Images\HelpIcon.png" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Images\New_Add.png" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Images\Others\complextype.png" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Images\Others\element.png" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Images\Others\leftarrow.png" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Images\Others\rightarrow.png" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Images\Others\schema.png" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Images\RemoveTag.png" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Images\Remove_New.png" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Images\s.gif" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Images\sprite.png" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Images\WizardPagination\Common\BasicConfigurationH.png" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Scripts\APIHandler.js" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Scripts\encode.js" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Scripts\Helper.js" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Scripts\i18next-1.7.0.js" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Scripts\jquery-1.8.3.js" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Scripts\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Scripts\jquery_nicescroll_min.js" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Scripts\kendo.all.min.js" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Scripts\PreviewHandler.js" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Scripts\Utility.js" />
+    <Content Include="DesignTime\WebUI\DefaultAssets\Scripts\Validate.js" />
+    <Content Include="DesignTime\WebUI\HTML\BasicSample.html" />
+    <Content Include="DesignTime\WebUI\Preview\PreviewConfiguration.html" />
+    <Content Include="DesignTime\WebUI\Preview\PreviewConfiguration.js" />
+    <Content Include="DesignTime\WebUI\Scripts\BasicSample.js" />
+    <Content Include="Resources\Images\StencilGroupIcons_16x16\AgilePartGroupIcons.png" />
+    <Content Include="Resources\Images\StencilIcons_50x50\CustomAgilePart.png" />
+    <Content Include="Resources\Images\TreeViewIcons_16x16\AgilePartTreeViewIcons.png" />
+    <Content Include="Resources\Images\WizardPagination_22x22\AgilePartH.png" />
+    <Content Include="Resources\Images\WizardPagination_22x22\AgilePartN.png" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DesignTime\AgilePartDescriptor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Runtime\AgilePart.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>AgilePart.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61668</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61668/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

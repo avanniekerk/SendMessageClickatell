@@ -1,0 +1,20 @@
+﻿<AgilePointActivityApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ActivityKind="AgilePart">
+  <HTMLAssets>
+    <HTMLAsset ElementRef="B3BB802BF9C21AD0119959F6D71BEC3D" WebID="B3BB802BF9C21AD0119959F6D71BEC3E">
+      <HTML Src="DesignTime/WebUI/HTML/BasicSample.html" />
+      <JS Src="DesignTime/WebUI/Scripts/BasicSample.js" />
+      <CSS Src="" />
+      <JSONResources>
+        <JSONResource Language="English" Locale="en-US" Src="DesignTime/WebUI/Locale/en-US/BasicSample.en-US.json" />
+      </JSONResources>
+      <Resources>
+        <Resource Type="Image" Src="Resources/Images/WizardPagination_22x22/AgilePartH.png" />
+        <Resource Type="Image" Src="Resources/Images/WizardPagination_22x22/AgilePartN.png" />
+      </Resources>
+    </HTMLAsset>
+  </HTMLAssets>
+  <Stencils>
+    <Stencil IncludeInPackage="true" Language="English" Locale="en-US">DesignTime/ActivityGroup/Activity.en-US.group</Stencil>
+    <StencilResources />
+  </Stencils>
+</AgilePointActivityApp>

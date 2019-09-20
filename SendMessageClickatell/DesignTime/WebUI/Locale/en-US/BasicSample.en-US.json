@@ -1,0 +1,8 @@
+﻿{
+  "PageTitle": "Send WhatsApp Message Clickatell Setup",
+  "TextBox1": "API Key",
+  "TextBox2": "Number To",
+  "TextBox3": "Message",
+  "TextBox4": "Output Variable Name (Message Response)",
+  "TextBox5": "Output Variable Name (MessageID)"
+}

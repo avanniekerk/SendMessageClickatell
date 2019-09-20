@@ -1,0 +1,15 @@
+﻿{
+  "PageTitle": "Basic Controls",
+  "TextBox": "Text Box",
+  "HTMLDivElement": "HTML Div Element",
+  "TextBoxNullExceptionPrefix": "Please enter ",
+  "DataPlaceHolder": "Drag & drop the variables",
+  "TextArea": "Text Area",
+  "RadioButton1": "Radio Button 1",  
+  "RadioButton2": "Radio Button 2",
+  "CheckBox1": "Check Box",
+  "InlineListDropdown": "Dropdown (Inline List)",
+  "DataBindDropdown": "Dropdown (Data Bind)",
+  "select": "--Select--",
+  "Datetime": "Datetime"
+}

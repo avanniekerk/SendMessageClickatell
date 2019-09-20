@@ -1,0 +1,187 @@
+[
+  {
+    "name": "processFields",
+    "eId": "ComplexType",
+    "imageUrl": "../DefaultAssets/Images/Others/complextype.png",
+    "minOccurs": null,
+    "maxOccurs": null,
+    "items": [
+      {
+        "name": "Customer",
+        "eId": "ComplexType",
+        "imageUrl": "../DefaultAssets/Images/Others/complextype.png",
+        "minOccurs": "0",
+        "maxOccurs": "unbounded",
+        "items": [
+          {
+            "name": "Id",
+            "eId": "Element",
+            "imageUrl": "../DefaultAssets/Images/Others/element.png",
+            "minOccurs": null,
+            "maxOccurs": null,
+            "items": [ ],
+            "expanded": true,
+            "typeAttr": "string",
+            "xPath": "/pd:AP/pd:processFields/pd:Customer/pd:Id",
+            "refName": null,
+            "isRefNameEmpty": true,
+            "anyAttribute": null,
+            "xmlns": null
+          },
+          {
+            "name": "Name",
+            "eId": "Element",
+            "imageUrl": "../DefaultAssets/Images/Others/element.png",
+            "minOccurs": null,
+            "maxOccurs": null,
+            "items": [ ],
+            "expanded": true,
+            "typeAttr": "string",
+            "xPath": "/pd:AP/pd:processFields/pd:Customer/pd:Name",
+            "refName": null,
+            "isRefNameEmpty": true,
+            "anyAttribute": null,
+            "xmlns": null
+          },
+          {
+            "name": "City",
+            "eId": "Element",
+            "imageUrl": "../DefaultAssets/Images/Others/element.png",
+            "minOccurs": null,
+            "maxOccurs": null,
+            "items": [ ],
+            "expanded": true,
+            "typeAttr": "string",
+            "xPath": "/pd:AP/pd:processFields/pd:Customer/pd:City",
+            "refName": null,
+            "isRefNameEmpty": true,
+            "anyAttribute": null,
+            "xmlns": null
+          },
+          {
+            "name": "Phone",
+            "eId": "Element",
+            "imageUrl": "../DefaultAssets/Images/Others/element.png",
+            "minOccurs": null,
+            "maxOccurs": null,
+            "items": [ ],
+            "expanded": true,
+            "typeAttr": "integer",
+            "xPath": "/pd:AP/pd:processFields/pd:Customer/pd:Phone",
+            "refName": null,
+            "isRefNameEmpty": true,
+            "anyAttribute": null,
+            "xmlns": null
+          },
+          {
+            "name": "Email",
+            "eId": "Element",
+            "imageUrl": "../DefaultAssets/Images/Others/element.png",
+            "minOccurs": null,
+            "maxOccurs": null,
+            "items": [ ],
+            "expanded": true,
+            "typeAttr": "string",
+            "xPath": "/pd:AP/pd:processFields/pd:Customer/pd:Email",
+            "refName": null,
+            "isRefNameEmpty": true,
+            "anyAttribute": null,
+            "xmlns": null
+          }
+        ],
+        "expanded": true,
+        "typeAttr": "",
+        "xPath": "/pd:AP/pd:processFields/pd:Customer",
+        "refName": null,
+        "isRefNameEmpty": true,
+        "anyAttribute": null,
+        "xmlns": null
+      }
+    ],
+    "expanded": true,
+    "typeAttr": "",
+    "xPath": "/pd:AP/pd:processFields",
+    "refName": null,
+    "isRefNameEmpty": true,
+    "anyAttribute": null,
+    "xmlns": null
+  },
+
+  {
+    "name": "formFields",
+    "eId": "Element",
+    "imageUrl": "../DefaultAssets/Images/Others/complextype.png",
+    "minOccurs": null,
+    "maxOccurs": null,
+    "items": [
+      {
+        "name": "SubForm1",
+        "eId": "ComplexType",
+        "imageUrl": "../DefaultAssets/Images/Others/complextype.png",
+        "minOccurs": "0",
+        "maxOccurs": "unbounded",
+        "items": [
+          {
+            "name": "FormField1",
+            "eId": "Element",
+            "imageUrl": "../DefaultAssets/Images/Others/element.png",
+            "minOccurs": null,
+            "maxOccurs": null,
+            "items": [ ],
+            "expanded": true,
+            "typeAttr": "string",
+            "xPath": "/pd:AP/pd:formFields/pd:SubForm1/pd:FormField1",
+            "refName": null,
+            "isRefNameEmpty": true,
+            "anyAttribute": null,
+            "xmlns": null
+          },
+          {
+            "name": "FormField2",
+            "eId": "Element",
+            "imageUrl": "../DefaultAssets/Images/Others/element.png",
+            "minOccurs": null,
+            "maxOccurs": null,
+            "items": [ ],
+            "expanded": true,
+            "typeAttr": "string",
+            "xPath": "/pd:AP/pd:formFields/pd:SubForm1/pd:FormField2",
+            "refName": null,
+            "isRefNameEmpty": true,
+            "anyAttribute": null,
+            "xmlns": null
+          },
+          {
+            "name": "FormField3",
+            "eId": "Element",
+            "imageUrl": "../DefaultAssets/Images/Others/element.png",
+            "minOccurs": null,
+            "maxOccurs": null,
+            "items": [ ],
+            "expanded": true,
+            "typeAttr": "string",
+            "xPath": "/pd:AP/pd:formFields/pd:SubForm1/pd:FormField3",
+            "refName": null,
+            "isRefNameEmpty": true,
+            "anyAttribute": null,
+            "xmlns": null
+          }
+        ],
+        "expanded": true,
+        "typeAttr": "",
+        "xPath": "/pd:AP/pd:formFields/pd:SubForm1",
+        "refName": null,
+        "isRefNameEmpty": true,
+        "anyAttribute": null,
+        "xmlns": null
+      }
+    ],
+    "expanded": true,
+    "typeAttr": "",
+    "xPath": "/pd:AP/pd:formFields",
+    "refName": null,
+    "isRefNameEmpty": true,
+    "anyAttribute": null,
+    "xmlns": null
+  }
+    ]
